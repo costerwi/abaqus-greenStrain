@@ -22,6 +22,8 @@ Get the [latest release](https://github.com/costerwi/abaqus-greenStrain/releases
 
 ## Execution
 
+From the command line
+
 ```
 abaqus python greenStrain.py Job-1.odb [Job-2.odb ...]
 ```
@@ -37,8 +39,9 @@ script is in the working directory or the `PYTHONPATH`
 Green strain is calculated based on the relationships
 
 $${\bf GE} = {1 \over 2} \left( {\bf F} \cdot {\bf F}^T - {\bf I} \right)$$
-$$
+
 $${\bf F} \cdot {\bf F}^T - {\bf I} = {\bf V} \cdot {\bf V}^T - {\bf I} = {\bf V} \cdot {\bf V} - {\bf I} $$
+
 $${\bf V} = {\bf NE} + {\bf I}$$
 
 Where
